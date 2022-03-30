@@ -26,8 +26,6 @@ namespace Sat
             SolidBrush bk = new SolidBrush(Color.FromArgb(249, 189, 93));
             Graphics g = e.Graphics;
             Pen pn = new Pen(Color.Black, 0);
-            //g.DrawLine(pn, 100, 10, 30, 10);
-            //g.DrawEllipse(new Pen(Color.Red, 100), 160, 55, 500, 500);
             Rectangle rect2 = new Rectangle(2, 12, 580, 580);
             e.Graphics.DrawEllipse(pn, rect2);
             Image myImage = Image.FromFile("C:\\Users\\PC\\source\\repos\\Sat\\Sat\\Resources\\okvir.jpg");
@@ -52,33 +50,51 @@ namespace Sat
             g.DrawString("11", new Font("Ariel", 15), Brushes.Black, new PointF(175, 115));
 
             //minute i sekunde
-            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
          
             // translacija oko centra
-            e.Graphics.TranslateTransform(
+            g.TranslateTransform(
                 ClientSize.Width / 2,
                 ClientSize.Height / 2);
 
-            DrawClockFace(e.Graphics);
+            DrawClockFace(g);
             
             // centar
-            e.Graphics.FillEllipse(Brushes.Black, -5, -5, 10, 10);
+            g.FillEllipse(Brushes.Black, -5, -5, 10, 10);
 
             // strelice
-
             Pen pennn = new Pen(Color.Black, 8);
             pennn.StartCap = LineCap.ArrowAnchor;
             pennn.EndCap = LineCap.RoundAnchor;
-            e.Graphics.DrawLine(pennn, 60, 50, 0, 0);
-            e.Graphics.DrawLine(pennn, 150, 10, 0, 0);
+            g.DrawLine(pennn, 60, 50, 0, 0);
+            g.DrawLine(pennn, 150, 10, 0, 0);
+
+            //stringovi
+            String drawString = "Analogni sat";
+            Font drawFont = new Font("Times New Roman", 30);
+            SolidBrush drawBrush = new SolidBrush(Color.Brown);
+            StringFormat drawFormat = new StringFormat();
+            int x = -101;
+            int y = 100;
+            drawFormat.FormatFlags = StringFormatFlags.NoWrap;
+            g.DrawString(drawString, drawFont, drawBrush, x, y, drawFormat);
+
+            //gornji string
+            Pen pn1 = new Pen(Color.SaddleBrown, 50);
+            g.DrawLine(pn1, -100, -100, 100, -100);
+            SolidBrush bkk = new SolidBrush(Color.SaddleBrown);
+            Rectangle rect3 = new Rectangle(-60, -140, 120, 70);
+            Rectangle rect4 = new Rectangle(-60, -130, 120, 70);
+            g.FillEllipse(bkk,rect3 );
+            g.FillEllipse(bkk, rect4);
+            Font drawFont1 = new Font("Lucida Calligraphy", 20);
+            g.DrawString("Royal", drawFont1, new SolidBrush(Color.Wheat),-40, -115);
         }
         private void DrawClockFace(Graphics gr)
         {
             // Draw.
             using (Pen thick_pen = new Pen(Color.Black, 4))
             {
-
-
                 // Get scale factors.
                 float outer_x_factor = 0.45f * ClientSize.Width;
                 float outer_y_factor = 0.45f * ClientSize.Height;
