@@ -8,3 +8,13 @@ C:\Users\PC\source\repos\Sat\Sat\obj\Debug\Sat.csproj.GenerateResource.cache
 C:\Users\PC\source\repos\Sat\Sat\obj\Debug\Sat.csproj.CoreCompileInputs.cache
 C:\Users\PC\source\repos\Sat\Sat\obj\Debug\Sat.exe
 C:\Users\PC\source\repos\Sat\Sat\obj\Debug\Sat.pdb
+C:\Users\PC\OneDrive\Radna površina\vezbe\zadaci\Sat\Sat\bin\Debug\Sat.exe.config
+C:\Users\PC\OneDrive\Radna površina\vezbe\zadaci\Sat\Sat\bin\Debug\Sat.exe
+C:\Users\PC\OneDrive\Radna površina\vezbe\zadaci\Sat\Sat\bin\Debug\Sat.pdb
+C:\Users\PC\OneDrive\Radna površina\vezbe\zadaci\Sat\Sat\obj\Debug\Sat.csprojAssemblyReference.cache
+C:\Users\PC\OneDrive\Radna površina\vezbe\zadaci\Sat\Sat\obj\Debug\Sat.Form1.resources
+C:\Users\PC\OneDrive\Radna površina\vezbe\zadaci\Sat\Sat\obj\Debug\Sat.Properties.Resources.resources
+C:\Users\PC\OneDrive\Radna površina\vezbe\zadaci\Sat\Sat\obj\Debug\Sat.csproj.GenerateResource.cache
+C:\Users\PC\OneDrive\Radna površina\vezbe\zadaci\Sat\Sat\obj\Debug\Sat.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Radna površina\vezbe\zadaci\Sat\Sat\obj\Debug\Sat.exe
+C:\Users\PC\OneDrive\Radna površina\vezbe\zadaci\Sat\Sat\obj\Debug\Sat.pdb

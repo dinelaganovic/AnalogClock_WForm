@@ -132,6 +132,10 @@ namespace Sat
 
         }
 
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            Invalidate();
+        }
     }
 }
 
